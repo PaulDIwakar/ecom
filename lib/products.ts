@@ -2,7 +2,7 @@ import axiosInstance from '@/lib/axios'; // Adjust the import path as per your s
 import axios, { isAxiosError } from 'axios';
 import { Product } from '@/typings/productTypings';
 
-export async function sendProductToBackend(product: Product) {
+export async function sendProductToBackend(product: { product: Product; username: string; title: string; url: string; price: number; quantity: number; }) {
   try {
     const response = await axiosInstance.post('/api/products', product);
     console.log('Product added successfully:', response.data);

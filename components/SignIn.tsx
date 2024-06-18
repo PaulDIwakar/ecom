@@ -2,6 +2,7 @@
 
 import React, { useState, FormEvent } from "react";
 import useUserStore from "@/store/userStore";
+import Image from "next/image";
 
 const SignIn: React.FC = () => {
   const [username, setUsername] = useState<string>('');
@@ -70,7 +71,7 @@ const SignIn: React.FC = () => {
       <div className="min-h-screen flex items-center justify-center bg-white py-6 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
           <div className="text-center">
-            <img
+            <Image
               className="mx-auto h-12 w-auto"
               src="https://mindythelion.com/wp-content/uploads/2016/09/walmart-logo-png-6.png"
               alt="Walmart"
@@ -79,7 +80,7 @@ const SignIn: React.FC = () => {
               Sign in or create your account
             </h2>
             <p className="mt-2 text-center text-sm text-gray-600">
-              Not sure if you have an account? Enter your email and we'll check for you.
+              Not sure if you have an account? Enter your email and we&apos;ll check for you.
             </p>
           </div>
           <form

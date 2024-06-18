@@ -32,6 +32,7 @@ export interface Product {
   specifications: Specification[];
   parse_status_code: number;
   price_strikethrough?: number;
+  quantity?: number;
 }
 
 export interface Meta {

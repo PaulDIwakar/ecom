@@ -3,6 +3,7 @@
 import React, { useState, FormEvent } from "react";
 import useUserStore from "@/store/userStore";
 import Image from "next/image";
+import Link from "next/link";
 
 const SignIn: React.FC = () => {
   const [username, setUsername] = useState<string>('');
@@ -71,13 +72,17 @@ const SignIn: React.FC = () => {
       <div className="min-h-screen flex items-center justify-center bg-white py-6 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
           <div className="text-center">
-            <Image
+            <Link href="/">
+            <div className="transition-transform transform hover:scale-110">
+              <Image
               className="mx-auto h-12 w-auto"
               src="https://mindythelion.com/wp-content/uploads/2016/09/walmart-logo-png-6.png"
               alt="Walmart"
               width={48}
               height={48}
-            />
+              />
+            </div>
+            </Link>
             <h2 className="mt-6 text-center text-3xl font-bold text-gray-900">
               Sign in or create your account
             </h2>

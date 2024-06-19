@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
 
-        <div className="flex">
+        <div>
           {modal}
           {children}
         </div>

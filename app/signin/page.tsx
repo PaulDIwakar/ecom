@@ -75,6 +75,8 @@ const SignIn: React.FC = () => {
               className="mx-auto h-12 w-auto"
               src="https://mindythelion.com/wp-content/uploads/2016/09/walmart-logo-png-6.png"
               alt="Walmart"
+              width={48}
+              height={48}
             />
             <h2 className="mt-6 text-center text-3xl font-bold text-gray-900">
               Sign in or create your account
